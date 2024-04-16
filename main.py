@@ -1,7 +1,6 @@
 from models.data_source import users
 from package.crud import read_friends, add_user, search_user, remove_user
 
-
 if __name__ == "__main__":
     while True:
         print("Welcome to the menu choose an option: ")
