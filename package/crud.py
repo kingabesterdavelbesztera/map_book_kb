@@ -21,3 +21,12 @@ def remove_user(users: list):
     for user in users:
         if user["name"] == imie:
                 users.remove(users)
+
+
+def update_user(users: list):
+    imie = input("Podaj imie użytkownia którego dane chcesz zmienić: ")
+    for user in users:
+        if user["name"] == imie:
+            user["name"] = input("Podaj nowe imię: ")
+            user["surname"] = input("Podaj nowe nazwisko: ")
+            user["posts"] = int(input("Podaj nowa liczbę postow: "))
