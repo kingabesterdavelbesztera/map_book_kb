@@ -64,7 +64,6 @@ label_posty_szczegoly_obiektow = Label(ramka_szczegoly_obiektow, text= "Liczba p
 label_lokalizacja_szczegoly_obiektow= Label(ramka_szczegoly_obiektow, text= "Lokalizacja: ")
 
 
-
 label_imie_szcegoly_obiektow_wartosc = Label(ramka_szczegoly_obiektow, text= ".... ")
 label_nazwisko_szcegoly_obiektow_wartosc = Label(ramka_szczegoly_obiektow, text= ".... ")
 label_posty_szczegoly_obiektow_wartosc = Label(ramka_szczegoly_obiektow, text= ".... ")
