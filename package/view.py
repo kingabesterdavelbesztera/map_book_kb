@@ -1,4 +1,5 @@
 from tkinter import *
+import tkintermapview
 
 # sterowanie
 users = []
@@ -85,7 +86,7 @@ def aktualizuj_uzytkownika(i):
 # gui
 root = Tk()
 root.title("MapBook")
-root.geometry("800x500")
+root.geometry("1024x760")
 
 # ramki do porządkowania struktury
 ramka_lista_obiektow = Frame(root)
@@ -156,5 +157,17 @@ label_posty_szczegoly_obiektow.grid(row=1, column=4)
 label_posty_szczegoly_obiektow_wartosc.grid(row=1, column=5)
 label_lokalizacja_szczegoly_obiektow.grid(row=1, column=6)
 label_lokalizacja_szczegoly_obiektow_wartosc.grid(row=1, column=7)
+
+map_widget=tkintermapview.TkinterMapView(ramka_szczegoly_obiektow, width=900, height=400)
+map_widget.set_position(52.2,21.0 )
+map_widget.set_zoom(8)
+marker_WAT = map_widget.set_marker(52.2546, 20.90025, text="WAT")
+
+
+map_widget.grid(row=2, column=0, columnspan= 8 )
+
+
+
+
 
 root.mainloop()
